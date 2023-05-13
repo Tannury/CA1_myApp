@@ -1,6 +1,10 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
+import { HomePage } from './home/home.page';
+import { Page1Page } from './page1/page1.page';
+import { Page2Page } from './page2/page2.page';
+
 const routes: Routes = [
   {
     path: 'home',
