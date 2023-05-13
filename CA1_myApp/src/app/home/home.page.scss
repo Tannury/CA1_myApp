@@ -1,3 +1,44 @@
+.funny-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  .funny-image {
+    width: 200px;
+    height: 400px;
+    margin-bottom: 16px;
+  }
+
+  .funny-title {
+    font-size: 24px;
+    color: #ff5c5c;
+    margin-bottom: 16px;
+  }
+
+  .funny-message {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .funny-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ff5c5c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #ff3e3e;
+    }
+  }
+}
+
+
 #container {
   text-align: center;
 
