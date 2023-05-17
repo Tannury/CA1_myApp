@@ -1,0 +1,44 @@
+ion-content {
+    --ion-background-color: #f8f8f8;
+  }
+  
+  ion-list {
+    ion-item {
+      border-radius: 10px;
+      margin-bottom: 10px;
+      --ion-background-color: #ffffff;
+  
+      ion-avatar {
+        width: 80px;
+        height: 80px;
+        --border-radius: 50%;
+      }
+  
+      ion-label {
+        h2 {
+          font-size: 18px;
+          font-weight: bold;
+          margin-bottom: 5px;
+        }
+  
+        p {
+          font-size: 14px;
+          color: #888888;
+        }
+      }
+    }
+  }
+  
+  ion-item[expanded] {
+    ion-label {
+      p {
+        display: block;
+      }
+    }
+  }
+  
+  .generate-button {
+    margin-top: 20px;
+  }
+  
+  

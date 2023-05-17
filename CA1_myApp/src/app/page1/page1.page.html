@@ -10,11 +10,54 @@
 
   <h1>Fan Facts</h1>
 
-  <ion-list>
-    <ion-item *ngFor="let fact of facts">
-      <!-- Display the fact content here -->
-    </ion-item>
-  </ion-list>
+  <ion-content>
+    <ion-list>
+      <ion-item *ngFor="let fact of facts" (click)="toggleFactDetails(fact)">
+        <ion-avatar slot="start">
+          <img src="assets/images/saudade.jpg" alt="Saudade">
+        </ion-avatar>
+        <ion-label>
+
+          <h2>Saudade - To Miss </h2>
+          <p>Brazilian Portuguese has a slang word "saudade," which describes 
+            a deep feeling of nostalgia and longing. It's often joked that 
+            Brazilians have saudade for everything, including things they 
+            haven't experienced yet.
+          </p> 
+            </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="assets/images/futebol.jpg" alt="Futebol">
+        </ion-avatar>
+        <ion-label>
+          <h2>Futebol- Football</h2>
+          <p>Brazilian people are known for their love of football. It's
+             not uncommon to see intense debates and passionate discussions
+              about football  matches among friends, family, and even strangers.
+          </p>
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="assets/images/festa.jpg" alt="Festa">
+        </ion-avatar>
+        <ion-label>
+          <h2>Festa - Party</h2>
+          <p>Brazilian people are famous for their love of music and dancing.
+            Samba and bossa nova are popular music genres, and you'll often 
+            find Brazilians spontaneously breaking into dance at parties,
+             celebrations, and even on the streets.
+          </p>
+        </ion-label>
+      </ion-item>
+      
+      <ion-item *ngIf="selectedFact">
+        <ion-note>{{ selectedFact.details }}</ion-note>
+      </ion-item>
+    </ion-list>
+    <ion-button expand="full" (click)="generateRandomFact()">Generate Random Fact</ion-button>
+  </ion-content
 
   <a routerLink="/home">Go to Home LOL app</a>
   <a routerLink="/page2">Go to next page</a>
