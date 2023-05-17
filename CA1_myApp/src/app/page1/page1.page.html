@@ -1,14 +1,23 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>Page1</ion-title>
+    <ion-title> 
+      Fun Facts
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
 
-  <h1>Welcome to Page 1</h1>
-  <a routerLink="/home">Go to Home page</a>
-  <a routerLink="/page2">Go to Page 2</a>
+  <h1>Fan Facts</h1>
+
+  <ion-list>
+    <ion-item *ngFor="let fact of facts">
+      <!-- Display the fact content here -->
+    </ion-item>
+  </ion-list>
+
+  <a routerLink="/home">Go to Home LOL app</a>
+  <a routerLink="/page2">Go to next page</a>
 
   <ion-header collapse="condense">
     <ion-toolbar>

@@ -7,6 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Page1Page implements OnInit {
 
+
+  facts = [
+    {
+      id: 1,
+      content: 'Fact 1: Lorem ipsum dolor sit amet.',
+    },
+    {
+      id: 2,
+      content: 'Fact 2: Consectetur adipiscing elit.',
+    },
+    // Add more facts as needed
+  ];
+
   constructor() { }
 
   ngOnInit() {
