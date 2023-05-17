@@ -36,7 +36,16 @@ ion-content {
       }
     }
   }
-  
+
+  .funny-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ff5c5c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+  }
   .generate-button {
     margin-top: 20px;
   }
